@@ -1,0 +1,559 @@
+*
+nav {
+    overflow: hidden;
+    padding-top:  1.5625rem;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+#header {
+    background-image: url(/images/image-hero-desktop.jpg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hamburger {
+    display: none;
+}
+.menu {
+    display: flex;
+}
+.menumobile {
+    display: none;
+}
+.menu li a {
+    margin-right: .9375rem;
+}
+section, aside {
+    background-color: whitesmoke;
+}
+#firstcontainer {
+    background-color: white;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    margin: -6.25rem auto 1.25rem auto;
+}
+#img {
+    margin-top: -30px;
+}
+#firstcontainer p {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.button1 {
+    background-color: hsl(176, 50%, 47%);
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    margin: 0px;
+    cursor: pointer;
+}
+.button1:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+#bookmark {
+    background-color: whitesmoke;  
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+}
+#bookmark img {
+    width: 50px;
+    height: 50px;
+    margin-left: -10px;
+    margin-right: 10px;           
+}
+#bookmark.active {
+    width: 200px;
+    transition: 1s;
+    color: hsl(176, 50%, 47%);
+    font-weight: 700;
+}
+#bookmark img.active {
+    filter: invert(70%) sepia(22%) saturate(1047%) hue-rotate(127deg) brightness(84%) contrast(90%);
+}
+#secondcontainer {
+    background-color: white;
+    width: 45%;
+    height: 200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+#text {
+    display: flex;
+    margin-left: 3rem;
+}
+#text div {
+    width: 150px;
+    height: 50px;
+    padding: 0 0  0 5%;
+    border-right: 1px solid grey;
+}
+#text div:last-child {
+    border-right: none;
+}
+#text div:nth-child(1) {
+    padding-left: 0px;
+}
+#text div p {
+    margin-top: -15px;   
+}
+#loadingbar {
+    background-color: hsl(0, 0%, 48%);
+    width: 85%;
+    height: 10px;
+    border-radius: 50px;
+    margin-left: 3rem;
+}
+#loadedbar {
+    background-color: hsl(176, 50%, 47%);
+    width: 80%;
+    height: 10px;
+    border-radius: 50px;
+}
+#maincontainer {
+    background-color: white;
+    width: 45%;
+    margin: 0px auto;
+}
+#maintext h3 {
+    padding: 35px 50px 0px 50px;
+}
+#maintext p {
+    padding: 0px 50px 10px 50px;
+    font-weight: 400;
+}
+.subcontainer {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px auto 20px auto;
+    width: 85%; 
+    height: fit-content;
+}
+.subcontainer div, .subcontainer p {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    border: none;
+}
+.edge  {
+    padding: 20px;
+    color: hsl(176, 50%, 47%);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+.subcontainer div span {
+    padding: 0px;
+    font-size: small;
+}
+.subcontainer div button {
+    background-color: hsl(176, 50%, 47%);
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.subcontainer div button:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+.subcontainer div a {
+    text-decoration: none;
+}
+p {
+    font-size: 14px;
+}
+.amtleft1 {
+    background-color: white;
+    border: none;
+    font-weight: 700;
+    font-size: large;
+    height: auto;
+    width: auto;
+    padding-bottom: 20px;
+}
+.amountleft {
+    background-color: white;
+    border: none;
+    font-weight: 700;
+    font-size: large;
+    padding: 0px;
+}
+.inner {
+    text-align: center;
+}
+.tee {
+    margin-top: 30px;
+}
+/* Back this project display */
+#project {
+    width: 45%;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+     
+}
+input [type=radio] {
+    width: 25px;
+    height: 25px;
+}
+.wrapped, .lastwrapped {
+    width: 85%;
+    margin: 10px auto 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px 10px 0px;
+}
+
+.lastwrapped, #lastsub {
+    opacity: 40%;
+    cursor: not-allowed;
+}
+.wrapped p, .lastwrapped p {
+    padding-left: 30px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    clear: right;
+}
+.content1 {          
+    display: flex;
+    align-items: flex-start;
+}
+.content2 {
+    display: flex;
+}
+.Incontent2 {
+    display: flex;
+}
+.content2 a {
+    padding-left: 10px;
+    margin-right: 20px;
+}
+.wrapper h4 {
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+.wrapper a {
+    color: hsl(176, 72%, 28%);;
+}
+.wrapped h4:hover {
+    color: hsl(176, 72%, 28%);   
+}
+.left {
+    float: right;
+    margin-top: -17px;
+}
+.right {
+    display: none;
+}
+.input {
+    width: 20px;
+    height: 15px;
+}
+#projecttext {
+    padding: 20px 0px 0px 40px;
+}
+#projecttext p {
+    padding: 0px;
+}
+#closemodal {
+    float: right;
+    padding: 20px;
+    margin: 0px;
+    cursor: pointer;
+}
+.pledge {
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding-top: 1em;
+    border-top: 1px solid rgb(71, 71, 71);
+}
+.inputcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.inputcontainer:hover {
+    border: 1px solid hsl(176, 72%, 28%);
+}
+.inputcontainer span {
+    padding-right: 5px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.amount {
+    border: none;
+    outline: none;
+    width: 25%;
+}
+.amount:hover {
+    border-right: 0.5px solid hsl(176, 72%, 28%);
+}
+.amountbtn {
+    width: 100px;
+    background-color: hsl(176, 72%, 28%);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+.inputss {
+    display: flex;
+}
+#thankyou {
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 22;
+}
+.tcontainer {
+    display: none;
+}
+#gotitbtn {
+    background-color: hsl(176, 50%, 47%);
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#gotitbtn:hover {
+    background-color: hsl(176, 72%, 28%);
+}
+.okay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;   
+}
+aside {
+    display: none;
+}
+@media only screen and (max-width: 920px) {
+    #firstcontainer, #secondcontainer,#maincontainer, #project {
+        width: 80%;
+    }
+    #thankyou {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    nav {
+        padding: 0px;
+    }
+    .hamburger {
+        padding-right: 20px;
+    }
+    #header {
+        background-size: cover;
+    }
+    .menu {
+        display: none;
+    }
+    .menumobile {
+        display: block;
+        background-color: white;
+        width: 80%;
+        position: absolute;
+        z-index: 1;
+        border-radius: 5px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menumobile li {
+        list-style-type: none; 
+        padding: 20px;  
+        border-bottom: 1px solid grey;   
+    }
+    .menumobile li a {
+        text-decoration: none;
+        color: black;
+       
+    }
+    .back {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 320vh;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .mainmenumobile {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    #closemobile {
+        display: none;
+    }
+    #firstcontainer, #secondcontainer,#maincontainer, #project {
+        width: 85%;
+    }
+    #thankyou {
+        width: 60%;
+    }
+    #project {
+        top: 70%;
+    }
+}
+@media only screen and (max-width: 520px) {
+    #header {
+        background-image: url(/images/image-hero-mobile.jpg);
+    }
+    #firstcontainer h1, #firstcontainer p {
+        padding: 0 20px;
+        text-align: center;
+    }
+    #secondcontainer {
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #text {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+    #text div {
+        border-bottom: 1px solid grey;
+        border-right: none;
+        height: fit-content;
+        width: 120px;
+    }
+    #loadingbar {
+        margin: 0px;
+    }
+    #span {
+        display: none;
+    }
+    #bookmark {
+        width: 0px;
+    }
+    #bookmark.active {
+        width: 0px;
+    }
+    #bookmark img {
+        margin: 0px;
+    }
+    #buttons {
+        justify-content: center;
+        align-items: center;
+    }
+    .subcontainer div {
+        display: block;
+    }
+    .subcontainer div a {
+        padding: 0px;
+        margin: 0px;
+    }
+    .subcontainer div h4 {
+        padding: 20px 0px 5px 0px;
+        margin: 0px;
+    }
+    .subcontainer div button {
+        margin-top: 0px;
+    }
+    .content2 h4 {
+        padding-left: 10px;
+    }
+    .Incontent2 {
+        display: block;
+    }
+    .content {
+        width: 75%;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+        padding-left: 30px;
+        display: block;
+    }
+    .right span {
+        font-weight: 700;
+    }
+    .pledge {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: none;
+    }
+    .inputss {
+        justify-content: center;   
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    .menumobile {
+        top: 25%;
+    }
+    #project {
+        top: 90%;
+    }
+}
+
